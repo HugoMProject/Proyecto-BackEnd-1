@@ -7,11 +7,11 @@ const express = require('express');
 const app = express ();
 
 app.get('/', function(solicitud, respuesta){
-    respuesta.sendFile(path.join(__dirname ,'views/index.html'))
+    respuesta.sendFile(path.join(__dirname ,'view/index.html'))
 })
 
 app.get('/contacto',  function(solicitud, respuesta){
-    respuesta.sendFile(path.join(__dirname ,'views/contacto.html')) 
+    respuesta.sendFile(path.join(__dirname ,'view/contacto.html')) 
 })
 
 app.listen(process.env.PUERTO, function(){
